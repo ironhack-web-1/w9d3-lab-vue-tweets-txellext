@@ -1,11 +1,12 @@
 <template>
   <div>
-    <span className="timestamp"> {{ timestamp }} </span>
+    <span className="timestamp"> {{ time }} </span>
   </div>
 </template>
 
 <script>
 export default {
+    props: ["time"],
 
 }
 </script>
