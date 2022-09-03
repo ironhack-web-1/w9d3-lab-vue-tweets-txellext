@@ -1,7 +1,7 @@
 <template>
   <div className="tweet">
     <img
-      src= "{{ user.image }}"
+      :src= "imagen"
       className="profile"
       alt="profile"
     />
@@ -10,7 +10,7 @@
       <div className="top">
         <span className="user">
           <span className="name"> {{ user.name }}</span>
-          <span className="handle">{{ user.handle }}</span>
+          <span className="handle">@{{ user.handle }}</span>
         </span>
 
         <span className="timestamp"> {{ timestamp }} </span>
@@ -34,7 +34,13 @@
 <script>
 export default {
   props: ["user", "message", "timestamp"],
+  data() {
+    return {
+      imagen: this.user.image
+    }
+  }
 }
+
 </script>
 
 
