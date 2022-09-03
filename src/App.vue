@@ -11,7 +11,6 @@
 </template>
 
 <script>
-
 import Tweet from './components/Tweet.vue';
 
 export default {
@@ -48,7 +47,7 @@ export default {
         ]
        }
     },
-    components: { Tweet }
+    components: { Tweet, ProfileImage }
 }
 </script>
 
