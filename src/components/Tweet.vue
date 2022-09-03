@@ -4,9 +4,9 @@
 
     <div className="body">
       <div className="top">
-        <User userData="user" />
+        <User :userData="user" />
 
-        <span className="timestamp"> {{ timestamp }} </span>
+        <Timestamp :time="timestamp" />
       </div>
 
       <p className="message"> {{ message }} </p>
@@ -27,10 +27,11 @@
 <script>
 import ProfileImage from './ProfileImage.vue';
 import User from './User.vue';
+import Timestamp from './Timestamp.vue';
 
 export default {
   props: ["user", "message", "timestamp"],
-  components: {ProfileImage, User}
+  components: {ProfileImage, User, Timestamp}
 }
 
 </script>

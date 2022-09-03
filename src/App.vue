@@ -47,7 +47,7 @@ export default {
         ]
        }
     },
-    components: { Tweet, ProfileImage }
+    components: { Tweet }
 }
 </script>
 
