@@ -4,10 +4,7 @@
 
     <div className="body">
       <div className="top">
-        <span className="user">
-          <span className="name"> {{ user.name }}</span>
-          <span className="handle">@{{ user.handle }}</span>
-        </span>
+        <User userData="user" />
 
         <span className="timestamp"> {{ timestamp }} </span>
       </div>
@@ -29,10 +26,11 @@
 
 <script>
 import ProfileImage from './ProfileImage.vue';
+import User from './User.vue';
 
 export default {
   props: ["user", "message", "timestamp"],
-  components: {ProfileImage}
+  components: {ProfileImage, User}
 }
 
 </script>
